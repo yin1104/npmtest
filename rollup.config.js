@@ -16,6 +16,7 @@ const env = process.env.NODE_ENV; // umd 模式的编译结果文件输出的全
 export default [
   {
     input: "src/index.ts",
+    external: ['react-dom'],
     output: [
       {
         file: pkg.main,
