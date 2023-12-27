@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // Default
+    "target": "es5", 
+    "esModuleInterop": true, 
+    "forceConsistentCasingInFileNames": true,
+    "strict": true, 
+    "skipLibCheck": true,
+
+    // Added
+    "jsx": "react",  // -- 将 JSX 转换为 React 代码
+    "module": "ESNext",  // -- 为我们的库生成现代 JS 模块
+    "declaration": true,  // -- 输出.d.ts我们的库类型的文件
+    "declarationDir": "types", // --文件放置位置
+    "sourceMap": true,  // 将 JS 代码映射回其 TS 文件源以进行调试
+    "outDir": "dist",   // -- 将生成项目的目录
+    "moduleResolution": "node",  // -- 遵循node.js规则查找模块
+    "allowSyntheticDefaultImports": true,  // -- 如果没有手动创建导出，则采用默认导出
+    "emitDeclarationOnly": true,  //  -- 不生成 JS（rollup 会这样做），仅导出类型声明
+  }
+}
